@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
-import { FiMenu } from "react-icons/fi";
 import navbarItems from "./navbarItems";
 
 const navbar = ({ toggle }: { toggle: () => void }) => {

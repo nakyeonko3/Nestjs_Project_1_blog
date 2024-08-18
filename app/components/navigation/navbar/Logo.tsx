@@ -42,9 +42,9 @@ const Logo = () => {
         <Image
           src="/images/logo.png"
           alt="Logo"
-          width={70}
+          width={50}
           //   width={width < 1024 ? "150" : "250"}
-          height={70}
+          height={50}
           //   height={width < 1024 ? "45" : "74"}
           className="relative"
         />
