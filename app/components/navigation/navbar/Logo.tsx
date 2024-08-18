@@ -1,0 +1,63 @@
+"use client";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Button from "./Button";
+
+const Logo = () => {
+  //update the size of the logo when the size of the screen changes
+  const [width, setWidth] = useState(0);
+
+  // change between the logo and the button when the user scrolls
+  const [showButton, setShowButton] = useState(false);
+
+  const updateWidth = () => {
+    const newWidth = window.innerWidth;
+    setWidth(newWidth);
+  };
+
+  const changeNavButton = () => {
+    if (window.scrollY >= 400 && window.innerWidth < 768) {
+      setShowButton(true);
+      console.log("show button");
+    } else {
+      setShowButton(false);
+      console.log("dont show button");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", changeNavButton);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    console.log(width);
+    updateWidth();
+  }, []);
+
+  return (
+    <>
+      <Link href="/" style={{ display: showButton ? "none" : "block" }}>
+        <Image
+          src="/images/logo.png"
+          alt="Logo"
+          width={70}
+          //   width={width < 1024 ? "150" : "250"}
+          height={70}
+          //   height={width < 1024 ? "45" : "74"}
+          className="relative"
+        />
+      </Link>
+      <div
+        style={{
+          display: showButton ? "block" : "none",
+        }}
+      >
+        <Button />
+      </div>
+    </>
+  );
+};
+
+export default Logo;
