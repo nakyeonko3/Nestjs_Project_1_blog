@@ -19,13 +19,13 @@ const navbar = ({ toggle }: { toggle: () => void }) => {
                 </li>
               ))}
             </ul>
-            <button
+            {/* <button
               type="button"
               className="inline-flex items-center md:hidden"
               onClick={toggle}
             >
               <FiMenu className="text-white" size={30} />
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
