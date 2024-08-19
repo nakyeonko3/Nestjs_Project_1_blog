@@ -6,7 +6,7 @@ const Posts = () => {
     <div>
       <h1>posts</h1>
 
-      <div className="container px-2 py-2">
+      <div className="container px-2 py-2 ">
         {" "}
         <Pizza />
       </div>
