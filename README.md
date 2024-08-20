@@ -23,3 +23,10 @@
 - [Portfolio Blog Starter | vercel](https://github.com/vercel/examples/tree/main/solutions/blog)https://github.com/vercel/examples/tree/main/solutions/blog
 
 - astro paper blog, 디자인 참고
+
+- [Learn NEXT.JS 14 🔥 Build a Static Markdown Blog Site - YouTube](https://www.youtube.com/watch?v=QIIc5EYSZpw&t=1072s)
+
+- [GitHub - jamezmca/static-recipe-blog: Static Next.JS 14 blog site using local markdown files](https://github.com/jamezmca/static-recipe-blog)
+
+
+
